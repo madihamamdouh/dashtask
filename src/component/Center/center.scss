@@ -1,0 +1,48 @@
+.user {
+  height: 100vh;
+  padding: 1em;
+  align-self: center;
+  background: #fcfcfc;
+  -webkit-box-shadow: 2px 4px 10px rgba(172, 172, 172, 0.37);
+  box-shadow: 2px 4px 10px #acacac67;
+  border-radius: 8px;
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 25px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 6px;
+      border-radius: 5px;
+      color: #f9c678;
+      border: 1px solid #f9c678;
+      cursor: pointer;
+    }
+
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: #ff2d55;
+      border: 1px solid rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+  .toolbar {
+    padding-inline: 3.2rem;
+    color: #817f7ff1;
+  }
+}

@@ -1,0 +1,89 @@
+$Prime-color: rgb(83, 83, 83);
+.navbar {
+  height: 3.2rem;
+  border-bottom: 0.5px solid #d1d0d0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #000000cc;
+  background: #fcfcfc;
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item {
+        display: flex;
+        align-items: center;
+        padding-inline: 4px;
+        font-size: 1em;
+        font-weight: 700;
+        color: $Prime-color;
+
+        .menuArrow {
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+      .item:nth-child(1) {
+        padding-inline-end: 1rem;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 30px;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      .item {
+        padding-inline: 0.5em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .userLink {
+          text-decoration: none;
+          color: $Prime-color;
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+        .userArrow {
+          font-size: 23px;
+          color: $Prime-color;
+        }
+        .circle {
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 1em;
+          border-radius: 50%;
+          margin-inline: 0.5em;
+          background-color: rgba(182, 225, 245, 0.5);
+        }
+      }
+      .line {
+        width: 2px;
+        height: 25px;
+        background-color: rgb(204, 207, 207);
+        margin: 0 4px 0 14px;
+      }
+      .icon {
+        font-size: 25px;
+        color: $Prime-color;
+      }
+    }
+  }
+}
+.hidebar {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}

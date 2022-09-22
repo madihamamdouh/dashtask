@@ -1,0 +1,36 @@
+.home {
+  box-sizing: border-box;
+  background-color: #dee1e8;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  .container {
+    flex: 5;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    .charts {
+      display: flex;
+      flex-direction: column;
+      padding-block: 1rem;
+      gap: 1.5rem;
+      .topHome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 1rem;
+        .userTitle {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #000000cc;
+          text-transform: capitalize;
+        }
+        .addBtn {
+          text-transform: capitalize;
+          background-color: #22a565;
+        }
+      }
+    }
+  }
+}
